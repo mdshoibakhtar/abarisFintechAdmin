@@ -25,6 +25,8 @@ import RetailerIncomePage from './pages/retailerIncome';
 import MyIncomePage from './pages/myIncome';
 import DebitReportPage from './pages/debitReport';
 import CreditReportPage from './pages/creditReport';
+import PageNotFound from './common/pageNotFound/PageNotFound';
+import MyCommissionRechargePage from './pages/profile/myCommisionRecharge';
 
 function App() {
   return (
@@ -55,6 +57,8 @@ function App() {
         <Route path="income/my-income" element={<MyIncomePage />} />
         <Route path="debit-report" element={<DebitReportPage />} />
         <Route path="credit-report" element={<CreditReportPage />} />
+        <Route path="agent" element={<MyCommissionRechargePage />} />
+        <Route path="page-not-found" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>

@@ -1,0 +1,11 @@
+@media   (max-width: 420px) and (min-width: 1024px) {
+    .navsbar .nav-item{
+        padding: 0;
+        font-size: 14px;
+    }
+}
+@media   (min-width: 567px) and (max-width: 1024px) {
+    .navsbar {
+        display: none;
+    }
+}

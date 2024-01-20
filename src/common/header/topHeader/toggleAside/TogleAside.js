@@ -1,124 +1,73 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Offcanvas } from "react-bootstrap"
 
+import Aos from "aos"
+import "aos/dist/aos.css"
+
+function getDate() {
+    const today = new Date();
+    const year = today.getFullYear();
+    const date = today.getDate();
+    const monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const m = new Date();
+    let getmonthName = monthName[m.getMonth()]
+    return `${date}/${getmonthName}/${year}`;
+}
+
+
 function ProfileQuerry({ name, ...props }) {
-  return (
-    <>
-            <Offcanvas show={props.show} onHide={props.handleClose} {...props} /* className='modle-diloge' */>
-                <Offcanvas.Header closeButton>
-                    {/* <Offcanvas.Title>Offcanvas</Offcanvas.Title> */}
+    const [currentDate, setCurrentDate] = useState(getDate());
+    const date = new Date();
+    var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    const getDayName = (inputDate) => {
+        const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const dayIndex = inputDate.getDay();
+        return dayNames[dayIndex];
+    };
+    const dayName = getDayName(new Date(date));
+
+
+    useEffect(() => {
+        Aos.init();
+    })
+    return (
+
+        <>
+            <Offcanvas show={props.show} onHide={props.handleClose} {...props} >
+                <Offcanvas.Header closeButton id='modle-header'>
+                    <Offcanvas.Title><div className="App" data-aos="zoom-out-up">
+                        <h2 data-aos="zoom-in"> {time}</h2>
+                        <div className='d-flex' data-aos="zoom-out">
+                            <h4 align="center"> {dayName}</h4>
+                            {""}
+                            &nbsp;
+                            <p>{currentDate}</p>
+                        </div>
+
+                    </div></Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                    {/* <div className="form-body">
-                        <div className="row">
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Name</label>
-                                    <input type="text" id="name" className="form-control" placeholder="Name" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Last Name</label>
-                                    <input type="text" id="last_name" className="form-control" placeholder="Last Name" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Mobile Number</label>
-                                    <input type="text" id="mobile" className="form-control" placeholder="Mobile Number" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Email Address</label>
-                                    <input type="text" id="email" className="form-control" placeholder="Email Address" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Lock Amount</label>
-                                    <input type="text" id="lock_amount" className="form-control" placeholder="Lock Amount" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Shop Name</label>
-                                    <input type="text" id="shop_name" className="form-control" placeholder="Shop Name" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Address</label>
-                                    <input type="text" id="address" className="form-control" placeholder="Address" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">City</label>
-                                    <input type="text" id="city" className="form-control" placeholder="City" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">State Name</label>
-                                    <input type="text" id="state_name" className="form-control" placeholder="State Name" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">District Name</label>
-                                    <input type="text" id="district_name" className="form-control" placeholder="District Name" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Pincode</label>
-                                    <input type="text" id="pin_code" className="form-control" placeholder="Pin Code" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Office Address</label>
-                                    <input type="text" id="office_address" className="form-control" placeholder="Office Address" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Pan Number</label>
-                                    <input type="text" id="pan_number" className="form-control" placeholder="Pan Number" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">GST Number</label>
-                                    <input type="text" id="gst_number" className="form-control" placeholder="GST Number" />
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Pancard</label>
-                                    <select className="form-control" id="pancard" >
-                                        <option value={1}>Active</option>
-                                        <option value={0}>De Active</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Normal Balance</label>
-                                    <input type="text" id="user_balance" className="form-control" placeholder="Normal Balance" />
-                                </div>
-                            </div>
-                            <div className="col-sm-12 mt-3">
-                                <div className="form-group">
-                                    <label htmlFor="name">Remark</label>
-                                    <textarea className="form-control" id="reason" rows={4} defaultValue={""} />
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
-                        <h1>Time Date</h1>
+                    <div className="form-body "  id='form-table'> 
+                        <table width={100 + "%"}>
+
+                            <tbody>
+                                <tr className='text-center border-top-primary border-bottom pt-4 pb-2 '>
+                                    <td><strong>Normal Balance</strong></td>
+                                    <td><strong>0.00</strong></td>
+                                </tr>
+                                <tr className='text-center border-top-primary border-bottom pt-4 pb-2'>
+                                    <td><strong>Sms Balance
+                                    </strong></td>
+                                    <td><strong>0.00</strong></td>
+                                </tr>
+                                <tr className='text-center border-top-primary border-bottom pt-4 pb-2'>
+                                    <td><strong>Aeps Balance
+                                    </strong></td>
+                                    <td><strong>0.00</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </Offcanvas.Body>
 
                 <div className="modal-footer-1">
@@ -129,7 +78,7 @@ function ProfileQuerry({ name, ...props }) {
 
             </Offcanvas>
         </>
-  )
+    )
 }
 
 export default ProfileQuerry

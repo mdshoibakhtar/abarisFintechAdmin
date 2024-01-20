@@ -1,6 +1,7 @@
-body{
+body {
     margin: 0;
 }
+
 .dataTables_filter label {
     float: right;
 }
@@ -11,8 +12,24 @@ body{
     border-color: #f53c5b;
 }
 
-.modle-diloge {
-    width: 500px !important;
+
+#modle-header {
+    background-color: aqua !important;
+    color: darkblue;
+}
+
+#form-table {
+    background-color: #000;
+    color: aliceblue;
+}
+
+#form-table tr {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(94, 219, 27, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(94, 219, 27, 1);
+    box-shadow: 3px 3px 5px 0px rgba(94, 219, 27, 1);
+}
+.offcanvas-body{
+    background-color: #1200ff2b;
 }
 
 .modal-footer-1 {
@@ -38,4 +55,10 @@ body{
 .me-2-2 {
     margin-top: 6px;
     margin-right: 10px;
+}.list-style{
+    padding: 15px;
+    list-style: none;
+}
+.list-style li{
+    border-top: solid 1px dashed blueviolet;
 }

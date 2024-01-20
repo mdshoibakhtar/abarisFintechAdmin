@@ -45,7 +45,9 @@ function TopHeader() {
                                 </span>
                             </div>
                             <div className='px-2'><span className='profile bg-light p-2 rounded-circle'>
+                                <Link to={"/agent"}>
                                 <img src={profile} alt='profile' width={20} />
+                                </Link>
                             </span></div>
                             <div className='px-2'><span className='profile text-light' >
                                 <GiHamburgerMenu onClick={handleShow} />

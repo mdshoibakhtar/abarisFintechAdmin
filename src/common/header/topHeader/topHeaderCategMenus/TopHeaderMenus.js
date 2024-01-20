@@ -9,6 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdKeyboardArrowRight, MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 
 import "./TopHeaderMenu.css"
+import "../../../../assets/css/responsive.css"
 
 function TopHeaderMenus() {
     return (
@@ -117,38 +118,69 @@ function TopHeaderMenus() {
                                 </li>
                             </ul>
                         </li>
-                        <li className='nav-item'><span className='nav-icon px-2'><GrSettingsOption /></span><Link>Settings <span className='px-2'>{/* <IoChevronDownSharp /> */}</span></Link>
-                            {/* <ul class="dropdown-content px-3">
+                        <li className='nav-item'><span className='nav-icon px-2'><GrSettingsOption /></span><Link>Settings <span className='px-2'><IoChevronDownSharp /></span></Link>
+                            <ul class="dropdown-content px-3" id='top_h_dropDown'>
                                 <li className='menus-items'>
                                     <span className='pe-2 '><MdOutlineKeyboardDoubleArrowRight /></span>
-                                    <Link to="balance-trasnfer">Balance Transfer</Link>
-                                </li>
-                                <li className='menus-items'>
-                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
-                                    <Link to="balance-return-request"> Balance Return Request</Link>
-                                </li>
-                                <li className='menus-items'>
-                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
-                                    <Link to="payment-request-view">Payment Request View
+                                    <Link to="balance-trasnfer">Company Settings
                                     </Link>
                                 </li>
                                 <li className='menus-items'>
                                     <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
-                                    <Link to="payment-request">Payment Request </Link>
-                                </li>
-                            </ul> */}
-                        </li>
-                        <li className='nav-item'><span className='nav-icon px-2'><CgWebsite /></span><Link>Website Master <span className='px-2'>{/* <IoChevronDownSharp /> */}</span></Link>
-                            {/* <ul class="dropdown-content px-3">
-                                <li className='menus-items'>
-                                    <span className='pe-2 '><MdOutlineKeyboardDoubleArrowRight /></span>
-                                    <Link to='pending-dispute'>Pending Dispute</Link>
+                                    <Link to="balance-return-request"> Site Setting</Link>
                                 </li>
                                 <li className='menus-items'>
                                     <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
-                                    <Link to='solve-dispute'>Solve Dispute</Link>
+                                    <Link to="payment-request-view">SMS Setting
+                                    </Link>
                                 </li>
-                            </ul> */}
+                                <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to="payment-request">Package  Setting </Link>
+                                </li>
+                                <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to="payment-request">Bank   Setting </Link>
+                                </li>
+                                {/* <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to="payment-request">Logo  Setting </Link>
+                                </li> */}
+                                <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to="payment-request">Signature   Setting </Link>
+                                </li>
+                                <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to="payment-request">Service Banners
+                                        Setting </Link>
+                                </li>
+                                <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to="payment-request">Notifications
+                                        Setting </Link>
+                                </li>
+                            </ul>
+                        </li>
+                        <li className='nav-item'><span className='nav-icon px-2'><CgWebsite /></span><Link>Website Master <span className='px-2'><IoChevronDownSharp /></span></Link>
+                            <ul class="dropdown-content px-3 " id='top_h_dropDown'>
+                                <li className='menus-items'>
+                                    <span className='pe-2 '><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to='pending-dispute'>Dynamic Page
+                                    </Link>
+                                </li>
+                                <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to='solve-dispute'>Front Banners
+                                    </Link>
+                                </li>
+                                <li className='menus-items'>
+                                    <span className='pe-2'><MdOutlineKeyboardDoubleArrowRight /></span>
+                                    <Link to='solve-dispute'>User Panel Slider
+
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
                         <li className='nav-item'><span className='nav-icon px-2'><FaWhatsapp /></span><Link>Whatsapp <span className='px-2'>{/* <IoChevronDownSharp /> */}</span></Link>
                             {/* <ul class="dropdown-content px-3">

@@ -1,0 +1,5 @@
+.bg-userIntro{
+    background: rgb(142,110,173);
+background: linear-gradient(42deg, rgba(142,110,173,0.9753151260504201) 23%, rgba(124,240,103,1) 65%, rgba(74,197,43,1) 79%, rgba(0,212,255,1) 100%);
+color: #fff;
+}

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+.dataTables_filter label {
+    float: right;
+}
+
+.btn-danger {
+    color: #fff !important;
+    background-color: #f53c5b;
+    border-color: #f53c5b;
+}
+
+.modle-diloge {
+    width: 500px !important;
+}
+
+.modal-footer-1 {
+    padding: 15px;
+}
+
+.modal-footer-1 .btn {
+    margin-right: 10px;
+}
+
+.modle-dilogee .modal-dialog {
+    width: 500px !important;
+}
+
+.tx-danger {
+    color: red;
+}
+
+.modal-footer-btn {
+    padding: 15px;
+}
+
+.me-2-2 {
+    margin-top: 6px;
+    margin-right: 10px;
+}

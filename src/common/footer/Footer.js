@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <section style={{position:"fixed",bottom:0, width:100 +"%"}} >
+    <section style={{position:"fixed",bottom:0,  width:100 +"%"}} className='h-100vh' >
         {/* !-------------Footer Opened--------------! */}
       <div class="main-footer ht-50  ">
             <div class="container-fluid pd-t-0-f ht-100 text-center" style={{fontSize:"14px",backgroundColor:'#0d6efd3b'}}>

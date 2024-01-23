@@ -22,6 +22,9 @@ body {
     background-color: #000;
     color: aliceblue;
 }
+/* #right-aside-table{
+    background-color: #0f39bb;
+} */
 
 #form-table tr {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(94, 219, 27, 1);
@@ -41,7 +44,7 @@ body {
 }
 
 .modle-dilogee .modal-dialog {
-    width: 500px !important;
+    max-width: 500px ;
 }
 
 .tx-danger {

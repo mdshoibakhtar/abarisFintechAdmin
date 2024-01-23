@@ -1,0 +1,84 @@
+            .offcanvas.offcanvas-start {
+                width: auto !important;
+            }
+
+            .list-none {
+                list-style: none;
+            }
+
+            .list-none li {
+                margin: 5px 0;
+                border-radius: 4px;
+                padding: 0 5px;
+            }
+
+            .list-none li a {
+                color: #000;
+            }
+
+            .sidebar-item {
+                padding: 0 0.3rem;
+                border-radius: 4px;
+                font-size: 1rem;
+                color: #f3f3f3;
+                text-decoration: none;
+                display: block;
+                border-bottom: 1px solid #fff;
+
+            }
+
+            .bgClr {
+                background-color: #0f39bb;
+                width: 100%;
+                padding: 0 0.3rem;
+                border-radius: 4px;
+                font-size: 1rem;
+            }
+            .bgClr1 {
+                background-color: #0f39bb;
+                padding: 0 0.3rem;
+                border-radius: 4px;
+                font-size: 1rem;
+            }
+
+            .sidebar-item:hover {
+                background-color: rgba(255, 255, 255, .1);
+                color: black;
+            }
+
+            .sidebar-title {
+                display: flex;
+                font-size: 1rem;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .sidebar-title span {
+                display: inline-block;
+                width: 1.5;
+            }
+
+            .sidebar-title .togglebtn {
+                cursor: pointer;
+                transition: .3s;
+            }
+
+            .sidebar-item.active .sidebar-title .togglebtn {
+                transform: rotate(-180deg);
+            }
+
+            .sidebar-content {
+                padding-top: .25rem;
+                height: 0;
+                overflow: hidden;
+
+            }
+
+            .sidebar-item.active .sidebar-content {
+                height: auto;
+                transition: all 1s;
+            }
+
+            .active {
+                transition: all 1s !important;
+            }

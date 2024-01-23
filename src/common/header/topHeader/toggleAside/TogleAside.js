@@ -16,7 +16,7 @@ function getDate() {
 
 
 function ProfileQuerry({ name, ...props }) {
-    const [currentDate, setCurrentDate] = useState(getDate());
+    const [currentDate] = useState(getDate());
     const date = new Date();
     var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     const getDayName = (inputDate) => {
@@ -25,13 +25,10 @@ function ProfileQuerry({ name, ...props }) {
         return dayNames[dayIndex];
     };
     const dayName = getDayName(new Date(date));
-
-
     useEffect(() => {
         Aos.init();
     })
     return (
-
         <>
             <Offcanvas show={props.show} onHide={props.handleClose} {...props} >
                 <Offcanvas.Header closeButton id='modle-header'>

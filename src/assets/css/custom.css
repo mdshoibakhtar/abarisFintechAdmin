@@ -70,6 +70,14 @@ body {
 .list-style li {
     border-top: solid 1px dashed blueviolet;
 }
+.table-all tbody tr td {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding: 8px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #5e597d;
+}
 
 .FaRegEdit {
     margin-bottom: 5px;

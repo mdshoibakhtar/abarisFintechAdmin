@@ -6,6 +6,8 @@ import WebsiteMaster from './websiteMaster/WebsiteMaster'
 import Members from './members/Members'
 import Reports from './reports/Reports'
 import Payment from './payment/Payment'
+import Dispute from './dispute/Dispute'
+import Leadgenerations from './leadgenerations/Leadgenerations'
 
 function Master() {
   return (
@@ -18,6 +20,8 @@ function Master() {
         <Members/>
         <Reports/>
         <Payment/>
+        <Dispute/>
+        <Leadgenerations/>
       </div>
     </section>
   )

@@ -31,6 +31,8 @@ import MasterPages from './pages/topNavigationPages/Master';
 import CompanyStaffPages from './pages/topNavigationPages/companyStaff/CompanyStaffPages';
 import BoardcastPage from './pages/boardcast';
 import BankMasterP from './pages/topNavigationPages/Master/bankMaster';
+import Provider from './components/topNavigationComp/apimaster/provider/Provider';
+import AddproviderLogo from './components/topNavigationComp/apimaster/provider/providerForm/addproviderLogo/AddproviderLogo';
 import AddBank from './components/topNavigationComp/masters/bankMaster/addBank/AddBank';
 import EditAddBank from './components/topNavigationComp/masters/bankMaster/editAddBank/EditAddbank';
 import EditRoleMaster from './components/topNavigationComp/masters/roleMaster/editRoleMaster/EditRoleMaster';
@@ -47,21 +49,26 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" />} />
         {/* Top Navigation Start */}
-        <Route path="master" element={<MasterPages />} />
         <Route path="bank-master" element={<BankMasterP />} />
         <Route path="add-bank" element={<AddBank />} />
         <Route path="edit-add-bank" element={<EditAddBank />} />
         <Route path="role-master" element={<RoleMasterPage />} />
         <Route path="edit-role-master" element={<EditRoleMaster />} />
-        <Route path="company-staff" element={<CompanyStaffPages />} />
+        {/* <Route path="company-staff-" element={<CompanyStaffPages />} /> */}
+        <Route path="company-staff-permission" element={<MasterPages />} />
         <Route path="status-master" element={<StatusMasterPage />} />
         <Route path="edit-status-master" element={<EditStatusMaster />} />
         <Route path="service-master" element={<ServiceMasterPage />} />
         <Route path="edit-service-master" element={<EditServiceMaster />} />
         <Route path="boardcast" element={<BoardcastPage />} />
+
+        {/*  Shoib Route start */}
+        <Route path="provider" element={<Provider />} />
+        <Route path="add-provider-logo" element={<AddproviderLogo />} />
         {/* Top Navigation End */}
 
         {/*  Navigation Start */}
+        {/*  Shoib Route */}
         <Route path="/dashboard" element={<Dashboardpage />} />
         <Route path="member-list/distributor" element={<DistributerPage />} />
         <Route path="create-user/distributor" element={<CreateUserDistributerPage />} />

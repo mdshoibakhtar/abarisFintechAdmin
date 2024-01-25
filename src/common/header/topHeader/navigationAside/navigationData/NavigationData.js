@@ -14,7 +14,7 @@ export const navigationData = {
                     id: "1",
                     title: "Bank Master",
 
-                    path: "/page-not-found"
+                    path: "/bank-master"
                 },
                 {
                     id: "2",

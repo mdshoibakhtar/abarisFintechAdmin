@@ -27,6 +27,10 @@ import DebitReportPage from './pages/debitReport';
 import CreditReportPage from './pages/creditReport';
 import PageNotFound from './common/pageNotFound/PageNotFound';
 import MyCommissionRechargePage from './pages/profile/myCommisionRecharge';
+import MasterPages from './pages/topNavigationPages/Master';
+import CompanyStaffPages from './pages/topNavigationPages/companyStaff/CompanyStaffPages';
+import BoardcastPage from './pages/boardcast';
+import BankMasterP from './pages/topNavigationPages/Master/bankMaster';
 
 function App() {
   return (
@@ -34,6 +38,14 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" />} />
+        {/* Top Navigation Start */}
+        <Route path="master" element={<MasterPages />} />
+        <Route path="bank-master" element={<BankMasterP />} />
+        <Route path="company-staff" element={<CompanyStaffPages />} />
+        <Route path="boardcast" element={<BoardcastPage />} />
+        {/* Top Navigation End */}
+
+        {/*  Navigation Start */}
         <Route path="/dashboard" element={<Dashboardpage />} />
         <Route path="member-list/distributor" element={<DistributerPage />} />
         <Route path="create-user/distributor" element={<CreateUserDistributerPage />} />
@@ -58,6 +70,7 @@ function App() {
         <Route path="debit-report" element={<DebitReportPage />} />
         <Route path="credit-report" element={<CreditReportPage />} />
         <Route path="agent" element={<MyCommissionRechargePage />} />
+        {/*  Navigation Start */}
         <Route path="page-not-found" element={<PageNotFound />} />
       </Routes>
       <Footer />

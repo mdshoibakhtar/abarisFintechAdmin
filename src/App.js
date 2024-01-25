@@ -31,6 +31,8 @@ import MasterPages from './pages/topNavigationPages/Master';
 import CompanyStaffPages from './pages/topNavigationPages/companyStaff/CompanyStaffPages';
 import BoardcastPage from './pages/boardcast';
 import BankMasterP from './pages/topNavigationPages/Master/bankMaster';
+import Provider from './components/topNavigationComp/apimaster/provider/Provider';
+import AddproviderLogo from './components/topNavigationComp/apimaster/provider/providerForm/addproviderLogo/AddproviderLogo';
 
 function App() {
   return (
@@ -39,13 +41,18 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/dashboard" />} />
         {/* Top Navigation Start */}
-        <Route path="master" element={<MasterPages />} />
         <Route path="bank-master" element={<BankMasterP />} />
-        <Route path="company-staff" element={<CompanyStaffPages />} />
+        {/* <Route path="company-staff-" element={<CompanyStaffPages />} /> */}
+        <Route path="company-staff-permission" element={<MasterPages />} />
         <Route path="boardcast" element={<BoardcastPage />} />
+
+        {/*  Shoib Route start */}
+        <Route path="provider" element={<Provider />} />
+        <Route path="add-provider-logo" element={<AddproviderLogo />} />
         {/* Top Navigation End */}
 
         {/*  Navigation Start */}
+        {/*  Shoib Route */}
         <Route path="/dashboard" element={<Dashboardpage />} />
         <Route path="member-list/distributor" element={<DistributerPage />} />
         <Route path="create-user/distributor" element={<CreateUserDistributerPage />} />

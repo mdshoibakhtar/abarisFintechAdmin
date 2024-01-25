@@ -69,11 +69,11 @@ export const navigationData = {
                     id: "10",
                     title: "Company Staff Permissions",
 
-                    path: "/page-not-found"
+                    path: "/company-staff-permission"
                 },
                 {
                     id: "11",
-                    title: "MContact Enquiryasters",
+                    title: "Contact Enquiry",
 
                     path: "/page-not-found"
                 },
@@ -101,7 +101,7 @@ export const navigationData = {
                     id: "1",
                     title: "Provider  Master",
 
-                    path: "/page-not-found"
+                    path: "/provider"
                 },
                 {
                     id: "2",

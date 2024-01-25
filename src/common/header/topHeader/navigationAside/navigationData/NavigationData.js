@@ -7,7 +7,7 @@ export const navigationData = {
         {
             id: "1",
             title: "Masters",
-            active:false,
+            active: false,
             icon: <MdDashboard />,
             subMenus: [
                 {
@@ -20,19 +20,19 @@ export const navigationData = {
                     id: "2",
                     title: "Role Master",
 
-                    path: "/page-not-found"
+                    path: "/role-master"
                 },
                 {
                     id: "3",
                     title: "Status Master",
 
-                    path: "/page-not-found"
+                    path: "status-master"
                 },
                 {
                     id: "4",
                     title: "Services Master",
 
-                    path: "/page-not-found"
+                    path: "/service-master"
                 },
                 {
                     id: "5",
@@ -93,7 +93,7 @@ export const navigationData = {
         },
         {
             id: "2",
-            active:false,
+            active: false,
             title: "APIs Masters",
             icon: <FaBookReader />,
             subMenus: [
@@ -150,7 +150,7 @@ export const navigationData = {
         },
         {
             id: "3",
-            active:false,
+            active: false,
             title: "Settings",
             icon: <GrSettingsOption />,
             subMenus: [
@@ -214,7 +214,7 @@ export const navigationData = {
         },
         {
             id: "4",
-            active:false,
+            active: false,
             title: "Website Masters:",
             icon: <MdWeb />,
             subMenus: [
@@ -241,7 +241,7 @@ export const navigationData = {
         },
         {
             id: "5",
-            active:false,
+            active: false,
             title: "WhatsApp",
             icon: <IoLogoWhatsapp />,
             subMenus: [

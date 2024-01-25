@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaRegEdit } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 function BankMasterList() {
@@ -9,9 +10,9 @@ function BankMasterList() {
                     <div className="card-header pb-0">
                         <div className="d-flex justify-content-between">
                             <h4 className="card-title mg-b-2 mt-2">Bank Master</h4>
-                            {/* <button className="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#member_download_model" fdprocessedid="pe4h68"> Download Retailer</button>
-                                        <Link to="/create-user/retailer" className="btn btn-danger btn-sm"> Create Retailer</Link>
-                                        <i className="mdi mdi-dots-horizontal text-gray" /> */}
+
+                            <Link to="/add-bank" className="btn btn-danger btn-sm">Add Banks </Link>
+
                         </div>
                         <hr />
                     </div>
@@ -65,7 +66,7 @@ function BankMasterList() {
                                                         <span className='bg-danger text-light py-1 px-2 rounded'>Disabled</span>
                                                     </td>
                                                     <td>
-                                                        <span className='bg-warning  py-1 px-2 rounded'><Link to={"link"} className='text-light text-decoration-none'>Edit</Link></span>
+                                                        <span className='bg-warning  py-1 px-2 rounded'><Link to={"/edit-add-bank"} className='text-light text-decoration-none'><FaRegEdit className='FaRegEdit' />Edit</Link></span>
                                                     </td>
                                                 </tr>
                                             </tbody>

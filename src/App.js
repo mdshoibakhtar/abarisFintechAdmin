@@ -33,6 +33,14 @@ import BoardcastPage from './pages/boardcast';
 import BankMasterP from './pages/topNavigationPages/Master/bankMaster';
 import Provider from './components/topNavigationComp/apimaster/provider/Provider';
 import AddproviderLogo from './components/topNavigationComp/apimaster/provider/providerForm/addproviderLogo/AddproviderLogo';
+import AddBank from './components/topNavigationComp/masters/bankMaster/addBank/AddBank';
+import EditAddBank from './components/topNavigationComp/masters/bankMaster/editAddBank/EditAddbank';
+import EditRoleMaster from './components/topNavigationComp/masters/roleMaster/editRoleMaster/EditRoleMaster';
+import RoleMasterPage from './pages/topNavigationPages/Master/roleMaster';
+import StatusMasterPage from './pages/topNavigationPages/Master/statusMaster';
+import EditStatusMaster from './components/topNavigationComp/masters/statusMaster/editStatusMaster/EditStatusMaster';
+import ServiceMasterPage from './pages/topNavigationPages/Master/serviceMaster';
+import EditServiceMaster from './components/topNavigationComp/masters/serviceMaster/serviceMasterEdit/ServiceMasterEdit';
 
 function App() {
   return (
@@ -42,8 +50,16 @@ function App() {
         <Route path="/" element={<Navigate to="/dashboard" />} />
         {/* Top Navigation Start */}
         <Route path="bank-master" element={<BankMasterP />} />
+        <Route path="add-bank" element={<AddBank />} />
+        <Route path="edit-add-bank" element={<EditAddBank />} />
+        <Route path="role-master" element={<RoleMasterPage />} />
+        <Route path="edit-role-master" element={<EditRoleMaster />} />
         {/* <Route path="company-staff-" element={<CompanyStaffPages />} /> */}
         <Route path="company-staff-permission" element={<MasterPages />} />
+        <Route path="status-master" element={<StatusMasterPage />} />
+        <Route path="edit-status-master" element={<EditStatusMaster />} />
+        <Route path="service-master" element={<ServiceMasterPage />} />
+        <Route path="edit-service-master" element={<EditServiceMaster />} />
         <Route path="boardcast" element={<BoardcastPage />} />
 
         {/*  Shoib Route start */}
@@ -61,8 +77,8 @@ function App() {
         <Route path="suspended-users" element={<SuspendedUserPage />} />
         <Route path="not-working-users" element={<NotWorkingUserPage />} />
         <Route path="all-transactions-report" element={< AlltransportationReportsPage />} />
-        <Route path="pancard-report" element={< PanCardReportPages/>} />
-        <Route path="pending-transaction-report" element={< PendingTransactionReport/>} />
+        <Route path="pancard-report" element={< PanCardReportPages />} />
+        <Route path="pending-transaction-report" element={< PendingTransactionReport />} />
         <Route path="operator-wise-sale" element={<OperatorWiseSalePage />} />
         <Route path="ledger-report" element={<LedgerReportPage />} />
         <Route path="balance-trasnfer" element={< BalanceTransferPage />} />

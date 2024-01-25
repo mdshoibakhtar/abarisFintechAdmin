@@ -44,22 +44,28 @@ function BankMasterList() {
                                         <table className="table-all">
                                             <thead>
                                                 <tr>
+                                                    <th>ID</th>
                                                     <th>Bank Name</th>
                                                     <th>IFSC Code</th>
                                                     <th>Bank ID</th>
                                                     <th>Paysprint Bank Id</th>
                                                     <th>Status</th>
+                                                    <th>Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
 
                                                 <tr role="row" class="odd border-top border-bottom border-primary">
+                                                    <td> 1</td>
                                                     <td>SBI Bank</td>
                                                     <td class="sorting_1">SBN0872365</td>
                                                     <td>1</td>
                                                     <td><span class="positive-value">45</span></td>
                                                     <td>
                                                         <span className='bg-danger text-light py-1 px-2 rounded'>Disabled</span>
+                                                    </td>
+                                                    <td>
+                                                        <span className='bg-warning  py-1 px-2 rounded'><Link to={"link"} className='text-light text-decoration-none'>Edit</Link></span>
                                                     </td>
                                                 </tr>
                                             </tbody>

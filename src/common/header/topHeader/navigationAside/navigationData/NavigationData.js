@@ -38,20 +38,20 @@ export const navigationData = {
                     id: "5",
                     title: "Payment methods",
 
-                    path: "/page-not-found"
+                    path: "/payment-method"
                 },
                 {
                     id: "5",
                     title: "Payout Beneficiary ",
 
-                    path: "/page-not-found"
+                    path: "/payout-beneficiary-master"
                 },
 
                 {
                     id: "7",
                     title: "Agent Onboarding",
 
-                    path: "/page-not-found"
+                    path: "/agent-onboarding-list"
                 },
                 {
                     id: "8",

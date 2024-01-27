@@ -41,6 +41,15 @@ import StatusMasterPage from './pages/topNavigationPages/Master/statusMaster';
 import EditStatusMaster from './components/topNavigationComp/masters/statusMaster/editStatusMaster/EditStatusMaster';
 import ServiceMasterPage from './pages/topNavigationPages/Master/serviceMaster';
 import EditServiceMaster from './components/topNavigationComp/masters/serviceMaster/serviceMasterEdit/ServiceMasterEdit';
+import PaymentMethodMasterPage from './pages/topNavigationPages/Master/paymentMethodMaster';
+import AddPaymentMethod from './components/topNavigationComp/masters/paymentMethodMaster/addPaymentMethod/AddPaymentMethod';
+import EditPaymentMethod from './components/topNavigationComp/masters/paymentMethodMaster/editPaymentMethod/EditPaymentMethod';
+import PayoutBeneficiaryMasterPage from './pages/topNavigationPages/payoutBenefisiaryMaster';
+import AddPayoutBeneficiaryMaster from './components/topNavigationComp/masters/PayoutBeneficiaryMaster/addPayoutBeneficiaryMaster/AddPayoutBeneficiaryMaster';
+import EditPayoutBeneficiaryMaster from './components/topNavigationComp/masters/PayoutBeneficiaryMaster/EditPayoutBeneficiaryMaster/EditPayoutBeneficiaryMaster';
+import AgentOnbordingPage from './pages/topNavigationPages/agentOnbording';
+import AddAgentOnbording from './components/topNavigationComp/masters/agentOnbording/addAgentOnbording/AddAgentOnbording';
+import UpdateAgentOnbording from './components/topNavigationComp/masters/agentOnbording/UpdateAgentOnbording/UpdateAgentOnbording';
 
 function App() {
   return (
@@ -61,6 +70,16 @@ function App() {
         <Route path="service-master" element={<ServiceMasterPage />} />
         <Route path="edit-service-master" element={<EditServiceMaster />} />
         <Route path="boardcast" element={<BoardcastPage />} />
+        <Route path="payment-method" element={<PaymentMethodMasterPage />} />
+        <Route path="add-payment-method" element={<AddPaymentMethod />} />
+        <Route path="update-payment-method" element={<EditPaymentMethod />} />
+        <Route path="payout-beneficiary-master" element={<PayoutBeneficiaryMasterPage />} />
+        <Route path="add-payout-beneficiary-master" element={<AddPayoutBeneficiaryMaster />} />
+        <Route path="update-payout-beneficiary-master" element={<EditPayoutBeneficiaryMaster />} />
+        <Route path="agent-onboarding-list" element={<AgentOnbordingPage />} />
+        <Route path="add-agent-onboarding" element={<AddAgentOnbording />} />
+        <Route path="update-agent-onboarding" element={<UpdateAgentOnbording />} />
+
 
         {/*  Shoib Route start */}
         <Route path="provider" element={<Provider />} />

@@ -87,7 +87,7 @@ export const navigationData = {
                     id: "13",
                     title: "Broadcast",
 
-                    path: "/page-not-found"
+                    path: "/boardcast"
                 }
             ]
         },
